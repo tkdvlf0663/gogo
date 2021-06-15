@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대한민국의 대통령</title>
+    <link rel="stylesheet" href="css/styles.css">  
+    <style>
+html,
+body,
+head {
+  margin: 0px auto;
+  padding: 0px;
+  width: 100%;
+  max-height: 100%;
+}
+
+.wrapper {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_title {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+}
+
+.header_title h1 {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.header_topmenu {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  justify-content: center;
+}
+
+.header_topmenu ul {
+  display: flex;
+  text-decoration: none;
+}
+
+.header_topmenu li {
+  padding: 0px 30px;
+  list-style: none;
+  width: 200px;
+}
+
+.header_topmenu a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  max-height: 100%;
+  background-color: white;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  width: 1200px;
+  margin:0px auto;
+  max-height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.content_title {
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  padding: 30px 0px;
+  height: 10%;
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_title h2 {
+  font-weight: bold;
+}
+
+.content_profile {
+  display: flex;
+  max-width: 100%;
+  padding: 10px 150px;
+  border: 1px solid lightgray;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align:center;
+  justify-content: center;
+}
+
+.profile_info {
+  width: 100%;
+  max-height: 100%;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile_spec {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile_spec h4 {
+  margin: 5px 10px;
+  font-weight: 400;
+}
+
+.grayscale {
+  opacity: 50%;
+  margin-right: 20px;
+}
+
+.content img {
+  margin-left: 90px;
+  max-height: 100%;
+}
+
+.content_saying {
+  border: 1px solid lightgray;
+  border-top: none;
+  padding-left: 90px;
+  display: flex;
+}
+
+.content_saying h3 {
+  font-size: 18px;
+}
+
+.saying_text {
+  display: flex;
+  width: 80%;
+  padding: 50px 0px;
+  background-color: white;
+  padding-left: 50px;
+  border: 1px solid lightgray;
+  border-top: none;
+  margin-left: 90px;
+}
+
+#books.saying_text {
+  padding: 30px 30px;
+}
+
+#books.saying_text img {
+  width: 80px;
+  height: auto;
+  margin: 0px 30px;
+}
+
+.books_info h4 {
+  margin: 10px 0px;
+}
+
+.books_info h5 {
+  margin: 0px;
+}
+
+.content img {
+  width: 260px;
+  height: 300px;
+}
+
+.box button {
+  display: flex;
+  width: 100px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-top: none;
+  cursor: pointer;
+  background-color: whitesmoke;
+  transition: all 1s;
+}
+
+.box button:hover {
+  background-color: darkgray;
+}
+
+.rightnav {
+  width: 200px;
+  height: 100%;
+  background-color: rgb(64, 64, 66);
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightnav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+
+.rightnav ul li {
+  display: flex;
+  padding: 0px;
+  list-style: none;
+  justify-content: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.rightnav ul li:first-child {
+  border-top: 1px solid white;
+}
+
+.rightnav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 1s;
+}
+
+.rightnav ul li a:hover {
+  color: wheat;
+}
+
+.divison {
+    border-top: 2px solid black;
+    width: 1100px;
+}
+.content_profile h3
+{
+    font-weight: 400;
+}
+    </style>
+</head>
+<body>
+    
+    <!-- 코딩 시작 -->
+    <div class="wrapper">
+        <!-- 헤더 영역 -->
+        <div class="header">
+                                                    <div class="header_title">
+                <h1>대한민국의 대통령</h1>
+            </div>
+            <!-- 상단 메뉴 -->
+                                                    <div class="header_topmenu">
+                    <!-- 리스트 코드 -->
+                <ul>
+                    <li>
+                      <a href="index.html">역대 취임 대통령</a><!-- HOME (MAIN) -->
+                    </li>
+                    <li>
+                        <a href="sub.html">대한민국의 대통령 선거</a>
+                    </li>
+                    <li>
+                      <a href="sub2.html">대통령의 권한</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 본문 내역 -->
+        <div class="container">
+            <div class="content">
+                    <div class="content_title">
+                        <h2> 대한민국의 대통령 선거 </h2>
+                    </div>
+
+                    <div class="content_profile">
+                        <div>
+                            <h3>
+                            한국 대통령의 임기는 5년 단임으로,
+                            대통령 선거일은 임기만료일 전 70일 이후
+                             첫 번째 수요일(2007년 대통령 선거부터)이며,
+                             선거기간은 23일이다. 대통령의 임기는 전임 대통령 
+                             임기만료일의 다음 날 0시부터 개시된다.2017년 5월 9일 
+                             실시된 제19대 대통령 선거는 헌법재판소가 2017년 3월 10일
+                              박근혜 전 대통령에 대한 탄핵 인용 결정을 내리면서
+                               치러지게 된, 헌정 사상 첫 대통령 직선제에 의한 
+                               보궐선거(궐위로 인한 선거)였다. 이처럼 이전까지 12월에 
+                               치러지던 대선이 19대 대선에서 변경됨에 따라, 2022년에 
+                               있을 20대 대선은 3월에 치러질 전망이다. 
+                        </h3>
+                        <div class="divison"></div>
+                            <h2>대통령 선거 출마 자격</h2>
+                                <h3>
+                                    선거일 현재 5년 이상 국내에 거주하고 있는 만 40세 이상
+                                    대한민국 국민으로, 입후보 제한을 받는 공무원이 아닌 자이어야 한다.
+                                    이 경우 공무로 외국에 파견된 기간과 국내에 주소를 두고 일정기간
+                                    외국에 체류한 기간은 국내거주기간으로 본다. 다만, 국회의원의 경우
+                                    사퇴하지 않고 후보 등록이 가능하다.무소속인 경우 5개 이상의 시·도에
+                                    나누어 하나의 시·도에 주민등록이 되어 있는 선거권자의 수를 700인
+                                    이상으로 한 3500인 이상 6000인 이하의 추천을 받아야 한다.
+                                </h3>
+                        </div>
+                        <div class="divison"></div>
+                        <h2>대통령 후보 등록</h2>
+                        <h3>
+                            대통령 후보 등록기간은 선거일로부터 24일 전부터 2일 동안이며, 후보자는 중앙선관위에 
+                            기탁금 3억 원과 함께 등록서류를 구비, 등록을 마쳐야 한다.대통령 후보 등록 시
+                            구비서류는 ▲후보자 등록신청서를 비롯해 당적증명서 ▲이력서, 당비 납부증명서 또는 영수증,
+                            기탁금 납부영수증, 주민등록등본 ▲「공직선거법」 제49조(후보자등록 등) 제4항에 
+                            따른 대통령후보자 등록서류 일체(피선거권에 관한 증명서류, 등록대상재산에 관한 신고서,
+                            병역사항에 관한 신고서, 소득세·재산세·종합부동산세의 납부 및 체납에 관한 신고서,
+                            금고 이상의 형의 범죄경력에 관한 증명서, 학력증명서 등) ▲선거사무소 설치 신고서, 
+                            예비후보자의 인영 신고서, 예비후보자의 대리인 신고서를 포함하여 기타 위원회가 정하는 
+                            서류 등이다.재산신고는 지난해 12월 31일 기준으로 본인·배우자·직계 존비속의 전 재산을 
+                            신고해야 하며, 후보자의 직계존속은 자신의 세금납부 및 체납에 관한 신고를 거부할 수 있다.
+                        </h3>
+                        <div class="divison"></div>
+                        <h2>선거기간 및 선거운동</h2>
+                        <h3>
+                            선거기간은 대통령 후보 등록마감일의 다음 날부터 선거일까지이며,
+                            선거운동은 선거기간 개시일부터 선거일 전일까지에 한하여 할 수 있다.
+                        </h3>
+                        <div class="divison"></div>
+                        <h2>투표 및 개표</h2>
+                        <h3>
+                        투표 </br>
+                         선거일 현재 만 18세 이상의 국민에게 투표권이 주어진다.</br>
+                        </br>
+                        ① 투표 시간: 오전 6시부터 오후 6시까지(보궐선거의 경우 오후 8시까지)</br>
+                        ② 투표 절차: 투표소 입소 → 선거인명부에 의한 본인 여부 확인 → 투표용지 수령 → </br>
+                        기표소에서 기표 → 투표함 투입 → 퇴소</br>
+                        ③ 투표 종료</br>
+                        – 투표구위원장은 투표 마감 시각(오후 6시 또는 8시)에 투표 종료 선언</br>
+                        – 참관인 참관하에 위원 전원이 투표함의 투입구와 자물쇠를 봉쇄·봉인</br>
+                    </br>
+                        개표</br>
+                        ① 개표과정 공개: 개표참관인, 일반관람인, 신문방송보도단, 참관인, </br>
+                        정당추천위원 참여, 행정공무원수가 개표사무원 총수의 1/2을 초과하지</br>
+                        못하도록 제한됨</br>
+                        ② 개표 개시: 우편투표함은 별도로 먼저 개표 가능</br>
+                        ③ 개표 진행: 투표구별로 투표함 이상 유무 확인 → 개함 → 유ㆍ무효 구분 → </br>
+                        후보자별 득표 집계ㆍ공표(전체 개표소에서 개표기를 사용하므로 구·시·군위원회</br>
+                         위원장의 공표 전에도 중앙선거관리위원회 선거관리시스템에 집계되고 인터넷에 공개됨)</br>
+                        ④ 개표 종료: 개표가 종료되면 투표지를 투표구·후보자별로 구분 봉인하며, 개표록을 작성함</br>
+                        </h3>
+                        <div class="divison"></div>
+                        <h2>당선인 결정</h2>
+                        <h3>
+                            ① 유효투표의 다수를 얻은 자를 당선인으로 결정한다.</br>
+                        </br>
+                            ② 만약 후보자가 1인일 때에는 그 득표수가 선거권자 총수의 1/3 이상</br>
+                             득표해야 당선인으로 결정한다.</br>
+                            </br>
+                            ③ 최고득표자가 2인 이상일 때에는 국회에서 재적의원 과반수가 출석한 </br>
+                            공개회의에서 다수 표를 얻은 자를 당선인으로 결정한다.</br>
+                        </br>
+                            만약 선거·당선의 효력에 관하여 이의가 있는 경우 선거일 또는 당선인 </br>
+                            결정일부터 30일 이내 대법원에 소송을 제기할 수 있다.</br>
+                        </br>
+                        </h3>
+                        <div class="divison"></div>
+                        <h2>취임</h2>
+                        <h3>
+                              헌법 부칙 제1조 및 제2조 제2항에 따라 대통령 임기개시일, 즉 취임일은 2월 25일이었다.</br>
+                               그러나 박근혜 전 대통령의 탄핵으로 인해 앞당겨 치러진 제19대 대통령 선거부터는</br>
+                                취임일이 5월 10일로 변경되었다</br>
+                            </br>
+                             ㆍ헌법 부칙 제1조: 이 헌법은 1988년 2월 25일부터 시행한다.</br>
+                            </br>
+                             ㆍ헌법 부칙 제2조 제2항: 이 헌법에 의한 최초의 대통령의 임기는</br>
+                              이 헌법시행일로부터 개시한다.</br>
+                        </h3>
+                        </div>
+                    </div>
+                    </div>
+        </div>
+    </div>
+</body>
+</html>

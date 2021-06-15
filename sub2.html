@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대한민국의 대통령</title>
+    <link rel="stylesheet" href="css/styles.css">  
+    <style>
+html,
+body,
+head {
+  margin: 0px auto;
+  padding: 0px;
+  width: 100%;
+  max-height: 100%;
+}
+
+.wrapper {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_title {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+}
+
+.header_title h1 {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.header_topmenu {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  justify-content: center;
+}
+
+.header_topmenu ul {
+  display: flex;
+  text-decoration: none;
+}
+
+.header_topmenu li {
+  padding: 0px 30px;
+  list-style: none;
+  width: 200px;
+}
+
+.header_topmenu a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  max-height: 100%;
+  background-color: white;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  width: 1200px;
+  margin:0px auto;
+  max-height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.content_title {
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  padding: 30px 0px;
+  height: 10%;
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_title h2 {
+  font-weight: bold;
+}
+
+.content_profile {
+  display: flex;
+  max-width: 100%;
+  padding: 10px 150px;
+  border: 1px solid lightgray;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align:center;
+  justify-content: center;
+}
+
+.profile_info {
+  width: 100%;
+  max-height: 100%;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile_spec {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile_spec h4 {
+  margin: 5px 10px;
+  font-weight: 400;
+}
+
+.grayscale {
+  opacity: 50%;
+  margin-right: 20px;
+}
+
+.content img {
+  margin-left: 90px;
+  max-height: 100%;
+}
+
+.content_saying {
+  border: 1px solid lightgray;
+  border-top: none;
+  padding-left: 90px;
+  display: flex;
+}
+
+.content_saying h3 {
+  font-size: 18px;
+}
+
+.saying_text {
+  display: flex;
+  width: 80%;
+  padding: 50px 0px;
+  background-color: white;
+  padding-left: 50px;
+  border: 1px solid lightgray;
+  border-top: none;
+  margin-left: 90px;
+}
+
+#books.saying_text {
+  padding: 30px 30px;
+}
+
+#books.saying_text img {
+  width: 80px;
+  height: auto;
+  margin: 0px 30px;
+}
+
+.books_info h4 {
+  margin: 10px 0px;
+}
+
+.books_info h5 {
+  margin: 0px;
+}
+
+.content img {
+  width: 260px;
+  height: 300px;
+}
+
+.box button {
+  display: flex;
+  width: 100px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-top: none;
+  cursor: pointer;
+  background-color: whitesmoke;
+  transition: all 1s;
+}
+
+.box button:hover {
+  background-color: darkgray;
+}
+
+.rightnav {
+  width: 200px;
+  height: 100%;
+  background-color: rgb(64, 64, 66);
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightnav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+
+.rightnav ul li {
+  display: flex;
+  padding: 0px;
+  list-style: none;
+  justify-content: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.rightnav ul li:first-child {
+  border-top: 1px solid white;
+}
+
+.rightnav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 1s;
+}
+
+.rightnav ul li a:hover {
+  color: wheat;
+}
+
+.divison {
+    border-top: 2px solid black;
+    width: 1100px;
+}
+.content_profile h3
+{
+    font-weight: 400;
+}
+    </style>
+</head>
+<body>
+    
+    <!-- 코딩 시작 -->
+    <div class="wrapper">
+        <!-- 헤더 영역 -->
+        <div class="header">
+                                                    <div class="header_title">
+                <h1>대한민국의 대통령</h1>
+            </div>
+            <!-- 상단 메뉴 -->
+                                                    <div class="header_topmenu">
+                    <!-- 리스트 코드 -->
+                <ul>
+                    <li>
+                      <a href="index.html">역대 취임 대통령</a><!-- HOME (MAIN) -->
+                    </li>
+                    <li>
+                        <a href="sub.html">대한민국의 대통령 선거</a>
+                    </li>
+                    <li>
+                        <a href="sub2.html">대통령의 권한</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 본문 내역 -->
+        <div class="container">
+            <div class="content">
+                    <div class="content_title">
+                        <h2> 대통령의 권한 </h2>
+                    </div>
+
+                    <div class="content_profile">
+                        <div>
+                            <h3>
+                             현행 헌법에 있어서 한국의 대통령은 국가원수로서의 지위와, 행정부 수반으로서의 지위를 겸하고 있다.
+                        </h3>
+                        <div class="divison"></div>
+                            <h2>■행정에 관한 권한■</h2>
+                                <h3>
+                                    <h2>· 법령 집행권 ·</h2>:  대통령은 행정부의 수반으로서 법령에 따른 각 분야별 행정을
+                                     처리하기 위하여 법령 집행권을 가지며, 각부의 행정을 지휘 감독할 권한이 있다.
+                                </br>
+                            </br>
+                                    · <h2>· 국군 통수권 ·</h2> 대통령은 국군의 최고 사령관으로서 헌법과 법률이 
+                                    정하는 바에 따라 국군을 통솔 지휘한다.
+                                </br>
+                                </br>
+                                    · <h2>· 긴급 명령권 ·</h2>  대통령은 내우·외환·천재·지변 또는 중대한 재정·경제상의 위기에 
+                                    있어서 나라의 안전 보장 또는 공공의 안녕 질서를 유지하기 위하여 긴급한 조치가
+                                     필요하고 국회의 집회를 기다릴 여유가 없을 때에 한하여 최소한으로 필요한
+                                      재정·경제상의 처분을 하거나 이에 관하여 법률의 효력을 가지는 명령을 발할 수 있다.
+                                    </br>
+                                </br>
+                                    <h2>· 계엄 선포권 ·</h2> 대통령은 전시·사변 또는 이에 준하는 국가 비상 사태에 있어서 
+                                    병력으로써 군사상의 필요에 응하거나 공공의 안녕 질서를 유지할 필요가 있을 
+                                    때에는 법률이 정하는 바에 따라 계엄을 선포할 수 있다. 계엄은 비상 계엄과 경비
+                                     계엄으로 한다. 계엄을 선포한 때에는 대통령은 지체없이 국회에 통고하여야 한다.
+                                      비상 계엄이 선포되면 법률이 정하는 바에 따라 국민의 자유와 법원의 권한이 제약을
+                                       받는다. 국회가 재적 의원 과반수의 찬성으로 계엄의 해제를 요구한 때에는
+                                        대통령은 이를 해제하여야 한다.
+                                    </br>
+                                </br>
+                                   </br> <h2>· 공무원 임명권 ·</h2>대통령은 헌법과 법률이 정하는 바에 따라서 공무원을 임명 또는 파면시킬 수 있는 권한이 있다. 곧 국무 총리·국무 위원·각부 장관·감사원장·중앙 선거 관리 위원 3인, 그 밖의 법률이 정하는 공무원을 임명 또는 파면시킬 수 있는 권한을 가진다.
+                                </br>
+                            </br>
+                                   <h2> · 외교에 관한 권한 ·</h2> 대통령은 외국에 대하여 국가를 대표하고 조약을 체결하는 권한과 외국의 외교 사절을 받고 우리 나라의 외교 사절을 파견하는 권한이 있다. 외국과 조약을 체결하고 선전 포고나 강화를 할 경우에는 국회의 동의를 얻어야 한다.
+                                </br>
+                            </br>
+                                </h3>
+                        </div>
+                        <div class="divison"></div>
+                        <h2>■ 사법에 관한 권한 ■</h2>
+                        <h3>
+                            대통령은 독립된 사법부의견제 수단으로 준(準) 사법적 권한을 가진다.
+                             곧 대법원장 임명권과 사면·감형·복권 등을 명할 수 있는 권한이 있다.
+                              사면에는 일반 사면과 특별 사면이 있다.
+                        </h3>
+                        <h2>· 일반 사면 ·</h2> 범죄의 종류를 정하여 그에 해당하는 모든 죄인에 대하여 일반적으로 형의
+                         전부를 용서하거나, 이미 형의 선고를 받은 사람에게는 형의 집행을 면제하고, 아직 형의 선고를 받지
+                          않은 사람에게는 공소권(재판 소송)을 없이하는 권한을 대통령이 가진다. 일반 사면은 국회의 동의를 얻어야 한다.     
+                   </br>
+               </br>
+                       · <h2>· 특별 사면 ·</h2> 이미 형의 선고를 받은 특정 죄인에 대하여 형의 집행을 면제하는 대통령의 권한이다.
+                   </br>
+                   </br>
+                       · <h2>· 법관 임명권 ·</h2>  대통령은 국회의 동의를 얻어 대법원장, 대법관, 헌법 재판소의 장(長)과 재판관을 임명한다.
+                       </br>
+                   </br>
+                   <div class="divison"></div>
+                   <h2>■ 대통령의 특권 ■</h2>
+                   <h3>
+                    대통령은 내란 또는 외환의 죄를 범한 경우를 제외하고는 재직 중에 형사상의 소추를 받지 아니한다.
+                     이것은 대통령의 지위를 보장하여 대통령으로서의 직무를 성실히 수행하기 위해서이다.
+                      전직 대통령의 신분이나 예우(禮遇)에 관해서는 법률로 정하게 되어 있다
+                   </h3>
+                        </div>
+                    </div>
+                    </div>
+        </div>
+    </div>
+</body>
+</html>

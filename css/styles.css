@@ -1,0 +1,233 @@
+html,
+body,
+head {
+  margin: 0px auto;
+  padding: 0px;
+  width: 100%;
+  max-height: 100%;
+}
+
+.wrapper {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_title {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+}
+
+.header_title h1 {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.header_topmenu {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  justify-content: center;
+}
+
+.header_topmenu ul {
+  display: flex;
+  text-decoration: none;
+}
+
+.header_topmenu li {
+  padding: 0px 30px;
+  list-style: none;
+  width: 200px;
+}
+
+.header_topmenu a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  max-height: 100%;
+  background-color: white;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  width: 1000px;
+  max-height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.content_title {
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  height: 10%;
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.content_title h2 {
+  margin-left: 90px;
+  font-weight: 400;
+}
+
+.content_profile {
+  display: flex;
+  max-width: 100%;
+  border: 1px solid lightgray;
+  height: 60%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile_info {
+  width: 100%;
+  max-height: 100%;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile_spec {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile_spec h4 {
+  margin: 5px 10px;
+  font-weight: 400;
+}
+
+.grayscale {
+  opacity: 50%;
+  margin-right: 20px;
+}
+
+.content img {
+  margin-left: 90px;
+  max-height: 100%;
+}
+
+.content_saying {
+  border: 1px solid lightgray;
+  border-top: none;
+  padding-left: 90px;
+  display: flex;
+}
+
+.content_saying h3 {
+  font-size: 18px;
+}
+
+.saying_text {
+  display: flex;
+  width: 80%;
+  padding: 50px 0px;
+  background-color: white;
+  padding-left: 50px;
+  border: 1px solid lightgray;
+  border-top: none;
+  margin-left: 90px;
+}
+
+#books.saying_text {
+  padding: 30px 30px;
+}
+
+#books.saying_text img {
+  width: 80px;
+  height: auto;
+  margin: 0px 30px;
+}
+
+.books_info h4 {
+  margin: 10px 0px;
+}
+
+.books_info h5 {
+  margin: 0px;
+}
+
+.content img {
+  width: 260px;
+  height: 300px;
+}
+
+.box button {
+  display: flex;
+  width: 100px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-top: none;
+  cursor: pointer;
+  background-color: whitesmoke;
+  transition: all 1s;
+}
+
+.box button:hover {
+  background-color: darkgray;
+}
+
+.rightnav {
+  width: 200px;
+  height: 100%;
+  background-color: rgb(64, 64, 66);
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightnav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+
+.rightnav ul li {
+  display: flex;
+  padding: 0px;
+  list-style: none;
+  justify-content: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.rightnav ul li:first-child {
+  border-top: 1px solid white;
+}
+
+.rightnav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 1s;
+}
+
+.rightnav ul li a:hover {
+  color: wheat;
+}
